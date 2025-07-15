@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: medical-analyzer
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: GEMINI_API_KEY
+        value: AIzaSyBPNHtVVEUYXoFAGmWI2HJv8W5wkNJLJqg
+    plan: free
